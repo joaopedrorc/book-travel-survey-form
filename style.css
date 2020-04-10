@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+    background: linear-gradient(45deg, rgba(1,1,13,1) 11%, rgba(27,27,191,1) 43%, rgba(18,92,213,1) 66%, rgba(16,103,217,1) 71%, rgba(14,118,222,1) 78%, rgba(12,163,250,1) 87%, rgba(0,212,255,1) 100%);;
+    
+}
+
+.content {
+    text-align: center;
+}
+
+.form{
+    font-family: sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    border: outset;
+    padding: 50px;
+    background:  white;
+}
+
+.form * {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+#title{
+    font-size: 2em; /* 2 * the current font-size "16px", so, 2 * 16px = 32px */
+    font-weight: 600;
+}
+
+
+
+/*      Form items      */
+
+.form-item{
+    display: flex;
+    flex-direction: column;  
+}
+
+.form-children{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.form-item > * {
+    align-self: flex-start; /* Makes the width matches the width of 
+                            the content inside; otherwise it would be full width*/
+}
+
+.form-label {
+    font-weight: 600;
+    padding: 10px 0 15px;
+}
+
+.form-input {
+    -webkit-apppearance: none;
+    width: 100%;
+    max-width: 425px;
+
+    /* Fix for Safari/IOS date filds*/
+    min-height: calc(0.9em + (0.8em * 2) + 0.6em);
+
+
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    transition: background 0.25s, border-color 0.25s, color 0.25s ;
+
+}
+
+/* Form input interation with the user*/
+.form-input:focus {
+    background: #ffffff; /* Changes the background os the input to a brigther one */
+}
+
+.form-input::placeholder {
+    color: #bbbbbb;
+}
+
+
+
+.form-input-medium {
+    max-width: 250px;
+}
+
+
+
+
+
+
+.select-css {
+	display: block;
+	font-size:  0.9em;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	padding: 0.8em;
+	width: 100%;
+	max-width: 250px;
+	border: 1px solid #dddddd;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: 4px;
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    /* Fix for Safari/IOS date filds*/
+    min-height: calc(0.9em + (0.8em * 2) + 0.6em);
+
+    
+
+	appearance: none;
+	background-color:  #f9f9f9;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+	linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+
+
+.input {
+    border-radius: 4px;
+    border:  1px solid #dddddd; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: #f9f9f9;
+    max-width: 250px;
+
+}   
+
+.input-small {
+    border-radius: 4px;
+    border:  1px solid #dddddd; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    background: #f9f9f9;
+    max-width: 150px;
+
+}   
+
+.input-large {
+    border-radius: 4px;
+    border:  1px solid #dddddd; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    background: #f9f9f9;
+    max-width: 400px;
+
+}   
+
+#number-people{
+    max-width: 75px;
+}
+
+#number {
+    max-width: 75px;
+}

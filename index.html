@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+
+            <form id="survey-form" action="./" class="form">
+
+                <div>
+                    <h1 id="title">Book & Travel</h1>
+                    <p id="description">Find the best accommodation for your's needs</p>
+                </div>
+
+                <div class="form-item"> 
+                    <label class="form-label" for="destination" id="name-label">Destination:</label>
+                        <input
+                        name="destination"
+                        id="name" 
+                        type="text" 
+                        placeholder="Rio de Janeiro, Brazil" 
+                        required
+                        class="form-input input"
+                        >
+                </div>  
+                    
+                <div class="form-item">
+                    <label class="form-label" for="email" id="email-label">Email:</label>
+                    <input 
+                    name="email"
+                    id="email" 
+                    type="email" 
+                    placeholder="Enter a valid email address" 
+                    required
+                    class="form-input  input"
+                    >
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label" for="check-in-date">Check-In Date</label>
+                    <input 
+                    type="date" 
+                    name="check-in-date" 
+                    id="checkindate"
+                    class="form-input input-small"
+                    >
+                    </div>
+
+                    <div class="form-item">
+                    <label class="form-label" for="check-out-date">Check-Out Date</label>
+                    <input 
+                    type="date" 
+                    name="check-out-date" 
+                    id="checkoutdate"
+                    class="form-input input-small"
+                    >
+                </div>
+                    
+        
+                <div class="form-item">
+                    <label class="form-label" for="number" id="number-label">Age(optional):</label>
+                    <input 
+                    name="number"
+                    id="number" 
+                    type="number" 
+                    size="20" min="18" 
+                    max="99" 
+                    placeholder="Age"
+                    class="form-input input-small"
+                    >
+                </div>
+                    
+            
+                <div class="form-item">
+                    <label class="form-label" for="travalers">Types of Travel :</label>
+                    <select class="form-input select-css" id="dropdown" name="travelers">
+                        <option value="business">Business Travel</option>
+                        <option value="solo">Solo Travel</option>
+                        <option value="friends">Travel With Friends</option>
+                        <option value="family">Family Travel</option>
+                        <option value="group">Travel With Group</option>
+                        <option value="luxury">Luxury Travel</option>
+                        <option value="adventure">Adventure Travel</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label" for="adult-num">How Many : </label>
+                    <select class="form-input select-css form-input-medium " name="adult" id="n-adult" name="adult-num" >
+                        <option value="oneadult">1 Adult</option>
+                        <option value="twoadult">2 Adults</option>
+                        <option value="threeadult">3 Adults</option>
+                        <option value="fouradult">4 Adults</option>
+                        <option value="fiveadult">5 Adults</option>
+                    </select>
+                </div>
+
+                <div class="form-children">
+                    <select class="form-input select-css form-input-medium " name="children" id="n-children" >
+                        <option value="nochildren">No Child</option>
+                        <option value="onechildren">1 Children</option>
+                        <option value="twoachildren">2 Children</option>
+                        <option value="threechildren">3 Children</option>
+                        <option value="fourchildren">4 Children</option>
+                        <option value="fivechildren">5 Children</option>
+                    </select>
+                </div>
+                        
+                <div class="form-item">
+                    <label class="form-label" for="oneperson">
+                        <input 
+                        type="radio" 
+                        name="radio" 
+                        id="oneperson"
+                        value="oneperson"
+                        > 1 Person
+                    </label>
+                
+                    <label class="form-label" for="twopeople">
+                        <input 
+                        type="radio" 
+                        name="radio" 
+                        id="twopeople"
+                        value="twopeople"
+                        > 2 People 
+                    </label>
+            
+                            
+                    <label class="form-label" for="threepeople">
+                        <input 
+                        type="radio" 
+                        name="radio" 
+                        id="threepeople"
+                        value="threepeople"
+                        > 3 People
+                    </label>
+
+                    <label class="form-label" for="number-of-people" id="number-of-people">A Grup Of :</label>
+                        <input 
+                        name="number-of-people"
+                        id="number-people" 
+                        type="number" 
+                        size="20" min="4" 
+                        max="10" 
+                        value="4"
+                        class="form-input input-small"
+                        >
+                </div>
+                        
+                    
+                <div class="form-item">
+                    <p class="form-label">Will you need ?</p>
+                    <label class="form-label">
+                        <input 
+                        type="checkbox" 
+                        id="vehicle1"
+                        name="vehicle1" 
+                        value="Bike"
+                        > A Big Room 
+                    </label>
+            
+                    <label class="form-label">
+                        <input 
+                        type="checkbox" 
+                        id="vehicle2" 
+                        name="vehicle2" 
+                        value="Car"
+                        > A Pet Space
+                    </label>
+            
+                    <label class="form-label"> 
+                        <input 
+                        type="checkbox" 
+                        id="vehicle3" 
+                        name="vehicle3" 
+                        value="boat"
+                        > A Kitchen
+                    </label>
+
+                    <label class="form-label"> 
+                        <input 
+                        type="checkbox" 
+                        id="vehicle3" 
+                        name="vehicle3" 
+                        value="boat"
+                        > A Laundry Room
+                    </label>
+
+                    <label class="form-label"> 
+                        <input 
+                        type="checkbox" 
+                        id="vehicle3" 
+                        name="vehicle3" 
+                        value="boat"
+                        > A Gym 
+                    </label>
+
+                    <label class="form-label"> 
+                        <input 
+                        type="checkbox" 
+                        id="vehicle3" 
+                        name="vehicle3" 
+                        value="boat"
+                        > Near By Park 
+                    </label>
+                </div>
+                                
+                <div class="form-item">
+                    <p class="form-label">Any suggestions or comments?</p>
+                    <textarea 
+                        name="comments" 
+                        id="comments" 
+                        cols="50" 
+                        rows="10"
+                        placeholder="Write you comments right here.."
+                        class="form-input input-large"
+                    ></textarea>
+                </div>
+                    
+        
+                <div class="form-label">
+                    <button class="form-input input-small" type="submit" id="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div> 
+    </div>
+        
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
